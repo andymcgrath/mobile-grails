@@ -10,4 +10,8 @@ class Author {
         lastName()
         birthdate()
     }
+
+    String toString() {
+        return "${firstName} ${lastName}"
+    }
 }

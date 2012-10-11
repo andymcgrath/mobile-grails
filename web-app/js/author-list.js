@@ -57,10 +57,10 @@ AuthorList.prototype.renderToHtml = function() {
 function addAuthorOnSection (author) {
 	var out = '<li><a href="#section-show-author?id='+ author.id + '" data-transition="fade" id="author'; 
 	out =  out + author.id + '-in-list">';
-	
-    out = out + author.birthdate +';';
-       out = out + author.firstName +';';
-       out = out + author.lastName +';';
+	out = out + author.firstName + ' ' + author.lastName;
+//    out = out + author.birthdate +';';
+//       out = out + author.firstName +';';
+//       out = out + author.lastName +';';
        
 	out = out + '</a></li>';
 	

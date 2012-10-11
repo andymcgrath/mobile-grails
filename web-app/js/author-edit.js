@@ -32,10 +32,13 @@ function createAuthor() {
 function showAuthor(id) {
 	resetForm("form-update-author");
 	var author = $("#section-list-authors").data("Author_" + id);
-    $('#input-author-firstName').val(author.firstName);
-    $('#input-author-lastName').val(author.lastName);
-    $('#input-author-birthdate').val(author.birthdate);
-
+    
+	$('#input-author-birthdate').val(author.birthdate);
+    
+	$('#input-author-firstName').val(author.firstName);
+    
+	$('#input-author-lastName').val(author.lastName);
+    
 	$('#input-author-id').val(author.id);
 	$('#input-author-version').val(author.version);
 	$('#input-author-class').val(author.class);
