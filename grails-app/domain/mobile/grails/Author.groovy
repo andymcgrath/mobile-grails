@@ -6,5 +6,8 @@ class Author {
     Date birthdate
 
     static constraints = {
+        firstName()
+        lastName()
+        birthdate()
     }
 }
